@@ -46,9 +46,9 @@
   </head>
 
   <body class="font-manrope">
-    <main class="w-11/12 mx-auto pt-8">
+    <main class="w-full md:w-11/12 mx-auto pt-8">
       <!-- navbar HTML starts here -->
-      <nav class="navbar bg-white">
+      <nav class="navbar bg-white w-11/12 md:w-full mx-auto">
         <div class="navbar-start flex-grow">
           <a class="font-extrabold text-3xl flex items-center gap-3" href="#">
             <div
@@ -112,9 +112,45 @@
         </div>
       </nav>
       <!-- hero section starts here -->
-       <section>
-        
-       </section>
+        <section class="hero bg-white">
+          <div class="hero-content text-center">
+            <div class="space-y-5">
+              <img class="mx-auto" src="./assets/banner.png" alt="" />
+              <h1 class="text-3xl md:text-4xl lg:text-6xl font-extrabold">
+                A barn house of this design has a striking appearance
+              </h1>
+              <p class="py-6 md:w-4/5 mx-auto text-[#494949]">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+              <button
+                  class="sm:flex mx-auto hidden btn bg-[#D4F6AE] font-medium rounded-3xl text-[#212121]"
+                >
+                  View Details
+                  <div
+                    class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                  </div>
+                </button>
+              <div class="bg-[#D4F6AE] rounded-3xl md:hidden">
+                <button
+                  class="btn bg-[#D4F6AE] font-medium rounded-3xl text-[#212121]"
+                >
+                  View Details
+                  <div
+                    class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>

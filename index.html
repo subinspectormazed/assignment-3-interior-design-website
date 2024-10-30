@@ -52,7 +52,7 @@
         <!-- navbar HTML starts here -->
         <nav class="navbar bg-white w-11/12 md:w-full mx-auto">
           <div class="navbar-start flex-grow">
-            <a class="font-extrabold text-3xl flex items-center gap-3" href="#">
+            <a class="font-extrabold text-3xl flex items-center gap-3" href="index.html">
               <div
                 class="h-12 w-12 bg-[#ABEF5F] rounded-full flex items-center justify-center"
               >
@@ -63,7 +63,7 @@
           </div>
           <div class="navbar-center hidden lg:flex lg:mr-24">
             <ul class="menu menu-horizontal px-1 text-[#737373]">
-              <li><a class="text-[#494949] font-extrabold">Home</a></li>
+              <li><a class="text-[#494949] font-extrabold" href="index.html">Home</a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
               <li><a>Blogs</a></li>
@@ -104,11 +104,11 @@
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow relative right-0"
             >
               <ul class="flex-col">
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
               </ul>
             </ul>
           </div>
@@ -168,9 +168,7 @@
               <h2 class="font-bold md:text-4xl text-2xl mb-5">
                 We design thoughtful, liveable spaces
               </h2>
-              <p
-                class="text-[#494949] mb-7 text-sm md:text-base md:mb-5"
-              >
+              <p class="text-[#494949] mb-7 text-sm md:text-base md:mb-5">
                 The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal
                 accents.
@@ -233,7 +231,9 @@
               accents.
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-11/12 mx-auto gap-4">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-11/12 mx-auto gap-4"
+          >
             <!-- card-01 -->
             <div class="p-6 bg-[#E7C1D3] rounded-2xl">
               <img src="./assets/concept.png" alt="" />
@@ -273,6 +273,67 @@
           </div>
         </div>
       </section>
+      <!-- disscussion form section starts here -->
+      <section class="bg-[url('/assets/bg.jpg')] bg-cover bg-no-repeat pb-6">
+        <div class="flex-col text-center pt-8 lg:pt-24">
+          <button
+            class="sm:flex mx-auto mb-4 border-none btn bg-btn_color bg-opacity-20 font-bold rounded-3xl text-[#212121]"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+            Let's Connect
+          </button>
+          <h2 class="font-bold md:text-4xl text-2xl mb-5 w-3/5 mx-auto">
+            Let’s Discuss Next Project
+          </h2>
+          <p
+            class="text-[#494949] font-medium mb-7 text-sm md:text-base md:mb-5 w-10/12 md:w-1/2 mx-auto"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- form section starts here -->
+        <div
+          class="grid grid-rows-6 grid-cols-1 md:grid-cols-2 mx-auto w-10/12 lg:w-3/5 gap-y-6 md:gap-6 font-medium"
+        >
+          <input
+            type="text"
+            placeholder="First Name*"
+            class="input input-bordered rounded-3xl w-full"
+          />
+          <input
+            type="text"
+            placeholder="Last Name*"
+            class="input input-bordered rounded-3xl w-full"
+          />
+          <input
+            type="text"
+            placeholder="Phone Number*"
+            class="input input-bordered rounded-3xl w-full"
+          />
+          <input
+            type="email"
+            placeholder="Email Address*"
+            class="input input-bordered rounded-3xl w-full"
+          />
+
+          <textarea
+            class="md:col-span-2 row-span-4 rounded-3xl p-5"
+            class="textarea textarea-bordered"
+            placeholder="Write your message here"
+          ></textarea>
+          <button
+            class="lg:col-span-2 bg-btn_color py-2 px-4 rounded-3xl btn font-extrabold text-xl"
+          >
+            Send Mail
+            <div
+              class="h-8 w-8 text-white bg-[#1C1C1C] rounded-full flex items-center justify-center"
+            >
+              <i class="fa-solid fa-arrow-right -rotate-45"></i>
+            </div>
+          </button>
+        </div>
+      </section>
     </main>
     <!-- footer starts from here -->
     <footer class="footer footer-center bg-[#1C1C1C] p-10">
@@ -296,31 +357,30 @@
           <ul
             class="text-[#E9E9E9] grid md:grid-cols-5 grid-cols-1 gap-3 md:gap-24 my-5"
           >
-            <li><a class="font-medium">Home</a></li>
-            <li><a>Services</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact Us</a></li>
+            <li><a class="font-medium" href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-        <div></div>
         <button
-          class="sm:flex mx-auto hidden btn bg-[#D4F6AE] font-medium rounded-3xl text-[#212121]"
+          class="mt-6 sm:flex mx-auto hidden btn bg-btn_color font-medium rounded-3xl text-[#212121] border-none"
         >
-          View Details
+          Book Consult
           <div
-            class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
+            class="h-8 w-8 text-white bg-[#1C1C1C] rounded-full flex items-center justify-center"
           >
             <i class="fa-solid fa-arrow-right -rotate-45"></i>
           </div>
         </button>
-        <div class="bg-[#D4F6AE] rounded-3xl md:hidden w-full">
+        <div class="bg-btn_color rounded-3xl md:hidden w-full">
           <button
-            class="btn bg-[#D4F6AE] font-medium rounded-3xl text-[#212121]"
+            class="btn bg-btn_color font-medium rounded-3xl text-[#212121]"
           >
-            View Details
+            Book Consult
             <div
-              class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
+              class="h-8 w-8 text-white bg-[#1C1C1C] rounded-full flex items-center justify-center"
             >
               <i class="fa-solid fa-arrow-right -rotate-45"></i>
             </div>

@@ -46,9 +46,9 @@
   </head>
 
   <body class="font-manrope">
-    <main class="w-full md:w-11/12 mx-auto pt-8">
+    <main class="">
       <!-- header section starts here -->
-      <header>
+      <header class="w-full md:w-11/12 mx-auto pt-8 mb-8">
         <!-- navbar HTML starts here -->
         <nav class="navbar bg-white w-11/12 md:w-full mx-auto">
           <div class="navbar-start flex-grow">
@@ -155,8 +155,66 @@
       </header>
 
       <!-- feature design section starts here  -->
+      <section class="bg-[#F4F4F4] mb-12 md:py-16 relative">
+        <div class="absolute left-10 top-10 sm:block hidden">
+          <img src="./assets/Vector.png" alt="" />
+        </div>
+        <div class="md:w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div class="px-8 pt-5 mx-auto">
+            <div class="flex-col text-center md:text-left">
+              <button class="btn bg-white rounded-3xl px-5 font-bold mb-5">
+                <i class="fa-solid fa-arrow-right"></i> About Us
+              </button>
+              <h2 class="font-bold md:text-4xl text-2xl mb-5">
+                We design thoughtful, liveable spaces
+              </h2>
+              <p class="text-[#494949] mb-7 text-sm md:text-base md:mb-5">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+            </div>
+
+            <div class="card card-side bg-base-100 shadow-xl">
+              <figure>
+                <img class="pl-5" src="./assets/commercial.png" alt="Movie" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title font-extrabold text-xl text-[#494949]">
+                  Commercial
+                </h2>
+                <p class="w-full md:w-5/6 text-[#737373]">
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="card card-side bg-base-100 shadow-xl">
+              <figure>
+                <img class="pl-5" src="./assets/residential.png" alt="Movie" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title font-extrabold text-xl text-[#494949]">
+                  Residential
+                </h2>
+                <p class="md:w-5/6 text-[#737373]">
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6 mx-auto sm:block hidden">
+            <img src="./assets/Rectangle.png" alt="" />
+          </div>
+          <div class="pt-6 mx-auto w-10/12 md:hidden">
+            <img class="rounded-2xl" src="./assets/Rectangle1.png" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
-<!-- footer starts from here -->
+    <!-- footer starts from here -->
     <footer class="footer footer-center bg-[#1C1C1C] p-10">
       <aside class="my-16">
         <a
@@ -175,7 +233,9 @@
           sophistication, featuring weathered wood, sleek metal accents.
         </p>
         <div class="">
-          <ul class=" text-[#E9E9E9] grid md:grid-cols-5 grid-cols-1 gap-3 md:gap-24 my-5">
+          <ul
+            class="text-[#E9E9E9] grid md:grid-cols-5 grid-cols-1 gap-3 md:gap-24 my-5"
+          >
             <li><a class="font-medium">Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
@@ -185,29 +245,28 @@
         </div>
         <div></div>
         <button
-                class="sm:flex mx-auto hidden btn bg-[#D4F6AE] font-medium rounded-3xl text-[#212121]"
-              >
-                View Details
-                <div
-                  class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
-                >
-                  <i class="fa-solid fa-arrow-right -rotate-45"></i>
-                </div>
-              </button>
-              <div class="bg-[#D4F6AE] rounded-3xl md:hidden w-full">
-                <button
-                  class="btn bg-[#D4F6AE] font-medium rounded-3xl text-[#212121]"
-                >
-                  View Details
-                  <div
-                    class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
-                  >
-                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
-                  </div>
-                </button>
-              </div>
+          class="sm:flex mx-auto hidden btn bg-[#D4F6AE] font-medium rounded-3xl text-[#212121]"
+        >
+          View Details
+          <div
+            class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
+          >
+            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+          </div>
+        </button>
+        <div class="bg-[#D4F6AE] rounded-3xl md:hidden w-full">
+          <button
+            class="btn bg-[#D4F6AE] font-medium rounded-3xl text-[#212121]"
+          >
+            View Details
+            <div
+              class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
+            >
+              <i class="fa-solid fa-arrow-right -rotate-45"></i>
+            </div>
+          </button>
+        </div>
       </aside>
-      
     </footer>
   </body>
 </html>

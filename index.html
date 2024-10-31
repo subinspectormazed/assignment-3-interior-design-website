@@ -144,9 +144,9 @@
                   <i class="fa-solid fa-arrow-right -rotate-45"></i>
                 </div>
               </button>
-              <div class="bg-[#D4F6AE] rounded-3xl md:hidden born">
+              <div class="bg-[#D4F6AE] rounded-3xl md:hidden">
                 <button
-                  class="btn bg-[#D4F6AE] px-32 rounded-3xl font-medium text-[#212121] border-none"
+                  class="btn bg-[#D4F6AE] px-16 rounded-3xl font-medium text-[#212121] border-none"
                 >
                   View Details
                   <div
@@ -299,68 +299,162 @@
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
         </div>
-        <!-- portfolio card section -->
-        <div class="grid mx-auto lg:grid-cols-12 gap-6 w-11/12">
+        <!-- portfolio card section for large screen-->
+        <div class="hidden md:block">
+          <div class="grid mx-auto lg:grid-cols-12 gap-6 w-11/12">
+            <!-- card-01 -->
+            <div class="bg-base-100 shadow-xl rounded-2xl col-span-8 p-6">
+              <div class="grid grid-cols-1 lg:grid-cols-8 gap-6">
+                <div class="col-span-3">
+                  <img src="./assets/img1.png" alt="" />
+                </div>
+                <div class="col-span-5">
+                  <h2 class="font-extrabold text-2xl mb-4">Commercial</h2>
+                  <p class="text-[#737373] mb-5">
+                    The barn house captivates with its blend of rustic charm and
+                    modern. The barn house captivates with its blend of rustic
+                    charm and modern .
+                  </p>
+                  <a
+                    class="flex items-center gap-2 font-extrabold text-xl"
+                    href="#"
+                    >View Details
+                    <div
+                      class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
+                    >
+                      <i class="fa-solid fa-arrow-right -rotate-45"></i></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- card-02 -->
+            <div class="bg-base-100 shadow-xl rounded-2xl col-span-4 p-6">
+              <img src="./assets/img2.png" alt="" />
+            </div>
+            <!-- card-03 -->
+            <div class="bg-base-100 shadow-xl rounded-2xl col-span-3 p-6">
+              <img src="./assets/img3.png" alt="" />
+            </div>
+            <!-- card-04 -->
+            <div class="bg-base-100 shadow-xl rounded-2xl col-span-6 p-6">
+              <div class="grid grid-cols-1 lg:grid-cols-11">
+                <div class="col-span-6">
+                  <img src="./assets/img4.png" alt="" />
+                </div>
+                <div class="col-span-5">
+                  <h2 class="font-extrabold text-2xl mb-4">Commercial</h2>
+                  <p class="text-[#737373] mb-5">
+                    The barn house captivates with its blend of rustic charm and
+                    modern .
+                  </p>
+                  <a
+                    class="flex items-center gap-2 font-extrabold text-xl"
+                    href="#"
+                    >View Details
+                    <div
+                      class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
+                    >
+                      <i class="fa-solid fa-arrow-right -rotate-45"></i></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- card-05 -->
+            <div class="bg-base-100 shadow-xl rounded-2xl col-span-3 p-6">
+              <img src="./assets/img5.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- portfolio card section for smaller screen-->
+        <div class="md:hidden w-11/12 mx-auto flex-col space-y-5">
           <!-- card-01 -->
-          <div class="bg-base-100 shadow-xl rounded-2xl col-span-8 p-6">
-            <div class="grid grid-cols-1 lg:grid-cols-8 gap-6">
-              <div class="col-span-3">
-                <img src="./assets/img1.png" alt="" />
-              </div>
-              <div class="col-span-5">
-                <h2 class="font-extrabold text-2xl mb-4">Commercial</h2>
-                <p class="text-[#737373] mb-5">
-                  The barn house captivates with its blend of rustic charm and
-                  modern. The barn house captivates with its blend of rustic
-                  charm and modern .
-                </p>
-                <a
-                  class="flex items-center gap-2 font-extrabold text-xl"
-                  href="#"
-                  >View Details
-                  <div
-                    class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
-                  >
-                    <i class="fa-solid fa-arrow-right -rotate-45"></i></div
-                ></a>
-              </div>
+          <div class="bg-base-100 shadow-xl rounded-2xl">
+            <figure class="p-6">
+              <img
+                src="./assets/img1.png"
+                alt=""
+                class="rounded-xl w-full h-full object-contain"
+              />
+            </figure>
+            <div class="p-6 pt-0">
+              <h2 class="font-extrabold text-xl mb-4">Commercial</h2>
+              <p class="text-[#737373] mb-5 w-11/12">
+                The barn house captivates with its blend of rustic charm and
+                modern. The barn house captivates with its blend of rustic charm
+                and modern .
+              </p>
+              <a class="flex items-center gap-2 font-extrabold text-xl" href="#"
+                >View Details
+                <div
+                  class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-arrow-right -rotate-45"></i></div
+              ></a>
             </div>
           </div>
           <!-- card-02 -->
-          <div class="bg-base-100 shadow-xl rounded-2xl col-span-4 p-6">
-            <img src="./assets/img2.png" alt="">
+          <div class="bg-base-100 shadow-xl rounded-2xl">
+            <figure class="p-6">
+              <img
+                src="./assets/img2.png"
+                alt=""
+                class="rounded-xl w-full h-full object-contain"
+              />
+            </figure>
           </div>
           <!-- card-03 -->
-          <div class="bg-base-100 shadow-xl rounded-2xl col-span-3 p-6">
-            <img src="./assets/img3.png" alt="">
+          <div class="bg-base-100 shadow-xl rounded-2xl">
+            <figure class="p-6">
+              <img
+                src="./assets/img5(1).png"
+                alt=""
+                class="rounded-xl w-full h-auto object-contain"
+              />
+            </figure>
           </div>
           <!-- card-04 -->
-          <div class="bg-base-100 shadow-xl rounded-2xl col-span-6 p-6">
-            <div class="grid grid-cols-1 lg:grid-cols-11">
-              <div class="col-span-6">
-                <img src="./assets/img4.png" alt="" />
-              </div>
-              <div class="col-span-5">
-                <h2 class="font-extrabold text-2xl mb-4">Commercial</h2>
-                <p class="text-[#737373] mb-5">
-                  The barn house captivates with its blend of rustic
-                  charm and modern .
-                </p>
-                <a
-                  class="flex items-center gap-2 font-extrabold text-xl"
-                  href="#"
-                  >View Details
-                  <div
-                    class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
-                  >
-                    <i class="fa-solid fa-arrow-right -rotate-45"></i></div
-                ></a>
-              </div>
+          <div class="bg-base-100 shadow-xl rounded-2xl">
+            <figure class="p-6">
+              <img
+                src="./assets/img4.png"
+                alt=""
+                class="rounded-xl w-full h-full object-contain"
+              />
+            </figure>
+            <div class="p-6 pt-0">
+              <h2 class="font-extrabold text-xl mb-4">Commercial</h2>
+              <p class="text-[#737373] mb-5 w-11/12">
+                The barn house captivates with its blend of rustic charm
+                and modern .
+              </p>
+              <a class="flex items-center gap-2 font-extrabold text-xl" href="#"
+                >View Details
+                <div
+                  class="h-8 w-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-arrow-right -rotate-45"></i></div
+              ></a>
             </div>
           </div>
           <!-- card-05 -->
-          <div class="bg-base-100 shadow-xl rounded-2xl col-span-3 p-6">
-            <img src="./assets/img5.png" alt="">
+          <div class="bg-base-100 shadow-xl rounded-2xl">
+            <figure class="p-6">
+              <img
+                src="./assets/img3 (1).png"
+                alt=""
+                class="rounded-xl w-full h-full object-contain"
+              />
+            </figure>
+          </div>
+          <!-- card-06 -->
+          <div class="bg-base-100 shadow-xl rounded-2xl">
+            <figure class="p-6">
+              <img
+                src="./assets/img5(1).png"
+                alt=""
+                class="rounded-xl w-full h-auto object-contain"
+              />
+            </figure>
           </div>
         </div>
       </section>
@@ -467,7 +561,7 @@
         </button>
         <div class="bg-btn_color rounded-3xl md:hidden w-full">
           <button
-            class="btn bg-btn_color font-extrabold text-xl px-20 rounded-3xl text-[#212121] border-none"
+            class="btn bg-btn_color font-extrabold text-xl px-10 rounded-3xl text-[#212121] border-none"
           >
             Book Consult
             <div
